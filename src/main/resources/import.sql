@@ -1,0 +1,33 @@
+INSERT INTO baskets(id) VALUES (1);
+INSERT INTO baskets(id) VALUES (2);
+INSERT INTO baskets(id) VALUES (3);
+INSERT INTO baskets(id) VALUES (4);
+INSERT INTO baskets(id) VALUES (5);
+INSERT INTO baskets(id) VALUES (6);
+INSERT INTO baskets(id) VALUES (7);
+INSERT INTO baskets(id) VALUES (8);
+INSERT INTO baskets(id) VALUES (9);
+INSERT INTO baskets(id) VALUES (10);
+
+
+INSERT INTO basket_items(id, quantity, product_id, basket_mapping_id) VALUES (1, 2, 1, 1);
+INSERT INTO basket_items(id, quantity, product_id, basket_mapping_id) VALUES (2, 3, 2, 1);
+INSERT INTO basket_items(id, quantity, product_id, basket_mapping_id) VALUES (3, 1, 3, 1);
+INSERT INTO basket_items(id, quantity, product_id, basket_mapping_id) VALUES (4, 5, 4, 1);
+INSERT INTO basket_items(id, quantity, product_id, basket_mapping_id) VALUES (5, 4, 5, 1);
+INSERT INTO basket_items(id, quantity, product_id, basket_mapping_id) VALUES (6, 2, 1, 2);
+INSERT INTO basket_items(id, quantity, product_id, basket_mapping_id) VALUES (7, 1, 3, 2);
+INSERT INTO basket_items(id, quantity, product_id, basket_mapping_id) VALUES (8, 2, 5, 2);
+INSERT INTO basket_items(id, quantity, product_id, basket_mapping_id) VALUES (9, 3, 2, 2);
+INSERT INTO basket_items(id, quantity, product_id, basket_mapping_id) VALUES (10, 7, 1, 3);
+INSERT INTO basket_items(id, quantity, product_id, basket_mapping_id) VALUES (11, 3, 4, 3);
+INSERT INTO basket_items(id, quantity, product_id, basket_mapping_id) VALUES (12, 2, 2, 4);
+INSERT INTO basket_items(id, quantity, product_id, basket_mapping_id) VALUES (13, 4, 1, 5);
+INSERT INTO basket_items(id, quantity, product_id, basket_mapping_id) VALUES (14, 5, 5, 5);
+INSERT INTO basket_items(id, quantity, product_id, basket_mapping_id) VALUES (15, 2, 4, 6);
+INSERT INTO basket_items(id, quantity, product_id, basket_mapping_id) VALUES (16, 1, 1, 7);
+INSERT INTO basket_items(id, quantity, product_id, basket_mapping_id) VALUES (17, 2, 2, 7);
+INSERT INTO basket_items(id, quantity, product_id, basket_mapping_id) VALUES (18, 4, 1, 8);
+INSERT INTO basket_items(id, quantity, product_id, basket_mapping_id) VALUES (19, 6, 2, 8);
+INSERT INTO basket_items(id, quantity, product_id, basket_mapping_id) VALUES (20, 2, 1, 9);
+INSERT INTO basket_items(id, quantity, product_id, basket_mapping_id) VALUES (21, 2, 1, 10);

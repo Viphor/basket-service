@@ -1,0 +1,32 @@
+version: '3'
+services:
+  basketservice:
+    image: net.klostergaard/basket-service
+    ports:
+      - 8080:8080
+    networks:
+      - backend
+    restart: on-failure
+    depends_on:
+      - mariadb
+
+  mariadb:
+    image: mariadb:latest
+    environment:
+      MYSQL_ROOT_PASSWORD: hireme
+      MYSQL_DATABASE: basketservice
+      MYSQL_USER: basketservice
+      MYSQL_PASSWORD: security
+    logging:
+      driver: syslog
+      options:
+        tag: "{{.DaemonName}}(image={{.ImageName}};name={{.Name}};id={{.ID}})"
+    networks:
+      - backend
+    restart: on-failure
+    volumes:
+      - ./out/mariadb:/var/lib/mysql
+
+networks:
+  backend:
+    driver: bridge
